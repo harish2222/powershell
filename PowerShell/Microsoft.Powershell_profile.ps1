@@ -80,11 +80,11 @@ function ga {
   git add
 }
 
-function gc {
+function gcsm {
   git commit -s -m
 }
-function gac {
-  git add . ; git commit -m
+function gacsm {
+  git add . ; git commit -s -m
 }
 function gb {
   git branch -m 
