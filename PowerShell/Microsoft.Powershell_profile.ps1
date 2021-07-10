@@ -36,10 +36,6 @@ function lsgtree {
   colorls --gs --tree
 }
 
-function npmi {
-  npm i 
-}
-
 function npmuu {
   npm update;npm upgrade
 }
@@ -47,15 +43,6 @@ function npmuu {
 function nfa {
   npm fix audit
 }
-
-function pipi {
-  python -m pip install 
-}
-
-function pips {
-  pip search
-}
-
 function pipreq {
   pip freeze > requirements.txt
 }
@@ -80,12 +67,6 @@ function ga {
   git add
 }
 
-function gcsm {
-  git commit -s -m
-}
-function gacsm {
-  git add . ; git commit -s -m
-}
 function gb {
   git branch -m 
 }
@@ -104,10 +85,6 @@ function gp {
 
 function gpfrc {
   git push --force
-}
-
-function gch {
-  git checkout
 }
 
 function djproj {
