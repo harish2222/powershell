@@ -9,6 +9,16 @@ Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 # this is to show the directory
+
+#	These are alias for changing name for long commnads but can only run one command at one
+#
+
+Set-Alias -Name ls -Value colorls
+
+#
+#  These are funtions that can be used to run multiple command
+#
+
 function ls {
   colorls --sd
 }
@@ -115,4 +125,9 @@ function profile {
   cd ~/OneDrive/Documents/PowerShell/
 }
 
-
+function nvimcon{
+  cd ~/AppData/Local/nvim/
+}
+function nvimdata{
+  cd ~/AppData/Local/nvim-data
+	}
