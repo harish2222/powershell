@@ -14,7 +14,7 @@ Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 #
 
 Set-Alias -Name ls -Value colorls
-
+Set-Alias -Name lz -Value lazygit
 #
 #  These are funtions that can be used to run multiple command
 #
