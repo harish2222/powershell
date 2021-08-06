@@ -1,7 +1,11 @@
 Import-Module PSReadLine
 Set-PSReadLineOption -PredictionSource History
+
+# starship init script
 Invoke-Expression (&starship init powershell)
 $ENV:STARSHIP_CONFIG = "$HOME\.starship\config.toml"
+
+
 # Shows navigable menu of all options when hitting Tab
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 
@@ -10,11 +14,13 @@ Set-PSReadlineKeyHandler -Key UpArrow -Function HistorySearchBackward
 Set-PSReadlineKeyHandler -Key DownArrow -Function HistorySearchForward
 # this is to show the directory
 
-#	These are alias for changing name for long commnads but can only run one command at one
+# These are alias for changing name for long commnads but can only run one command at one
 #
 
 Set-Alias -Name ls -Value colorls
 Set-Alias -Name lz -Value lazygit
+Set-Alias -Name sc -Value scoop
+
 #
 #  These are funtions that can be used to run multiple command
 #
@@ -29,7 +35,7 @@ function la {
   # colorls -l
 }
 #this is to show folders in form of tree
-function ltree{
+function ltr{
   colorls --tree
 }
 #this is to show in form of git stages
