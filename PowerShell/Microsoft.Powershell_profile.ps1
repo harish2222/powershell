@@ -52,6 +52,10 @@ function lsgtree {
   colorls --gs --tree
 }
 
+function gs {
+  git status
+}
+
 function npmuu {
   npm update;npm upgrade
 }
