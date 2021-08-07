@@ -1,0 +1,13 @@
+7zip 
+cscope 
+fzf 
+global
+grep 
+innounp 
+ktlint 
+lazygit
+qutebrowser
+ripgrep 
+sed 
+starship
+wixtoolset
